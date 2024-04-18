@@ -78,7 +78,7 @@ class Result {
                 integral += function.apply(middlePoint) * dx;
             }
         
-            if (Math.abs(integral - prevIntegral) <= epsilon) {
+            if ((integral - prevIntegral) <= epsilon) {
                 break;
             }
         

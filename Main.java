@@ -21,8 +21,8 @@ public class Main {
         int f = Integer.parseInt(bufferedReader.readLine().trim());
 
         double epsilon = Double.parseDouble(bufferedReader.readLine().trim());
-
         double result = Result.calculate_integral(a, b, f, epsilon);
+
         if(!Result.has_discontinuity){
             bufferedWriter.write(String.valueOf(result));   
         } else {
